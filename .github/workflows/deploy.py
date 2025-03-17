@@ -1,7 +1,9 @@
 name: Deploy Python CLI App to EC2
 
 on:
-  workflow_dispatch
+  push:
+    branches:
+      - main 
 
 jobs:
   deploy:
